@@ -15,7 +15,7 @@ public class Name {
 
 		String last = firstFormat.subString(0,indexComma);
 
-		last = last.subString(0,1).toUpperCase() + last.subString(1) + 
+		last = last.subString(0,1).toUpperCase() + last.subString(1).toUpperCase(); 
 
 		String first = firstFormat.subString(indexComma +2);
 		fist = first.subString(0,1).toUpperCase() + first.subString(1).toUpperCase();
