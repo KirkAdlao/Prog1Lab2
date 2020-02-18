@@ -15,7 +15,6 @@ public class BMI {
 
         //Get input
         System.out.println("What is your weight in pounds?");
-
         double weight = sc.nextDouble();
 
         System.out.println("What is your height in feet(inches)?");
