@@ -4,30 +4,28 @@ public class Name {
 	public static void main (String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Please type your 'lastname,firstname' in this format");
+		System.out.println("\nPlease type your 'lastname,firstname' in this format\n");
 
-		String firstFormat = sc.next();
+		String firstFormat = sc.nextLine();
 
 		int indexComma = firstFormat.indexOf(',');
 
-		System.out.printf("%nYou have inserted '%s'",firstFormat ); 
-		System.out.printf("%nIndex of comma is %d",indexComma );
+		System.out.printf("%nYou have inserted '%s'",firstFormat); 
+		System.out.printf("%nIndex of comma is %d",indexComma);
 
-		String last = firstFormat.subString(0,indexComma);
+		String last = firstFormat.substring(0,indexComma);
 
-		last = last.subString(0,1).toUpperCase() + last.subString(1).toUpperCase(); 
+		last = last.substring(0,1).toUpperCase() + last.substring(1).toLowerCase(); 
 
-		String first = firstFormat.subString(indexComma +2);
-		fist = first.subString(0,1).toUpperCase() + first.subString(1).toUpperCase();
-
-
-		System.printf("%n First name is %s ", first);
-
-		System.printf("%n Last name is %s ", last);
-
-		System.printf("%The final format is %s %s", first, last);
+		String first = firstFormat.substring(indexComma+2);
+		first = first.substring(0,1).toUpperCase() + first.substring(1).toLowerCase();
 
 
+		System.out.printf("%nFirst name is %s ", first);
+
+		System.out.printf("%nLast name is %s ", last);
+
+		System.out.printf("%The final format is %s %s", first, last);
 
 	}
 }
