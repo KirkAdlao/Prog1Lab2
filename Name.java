@@ -1,7 +1,10 @@
- import java.util.*;
- public class Name {
+import java.util.*;
+/* This program prompts the user for a name in the format lastname, firstname 
+and output the name in the format Firstname Lastname*/
 
-	public static void main (String[] args) {
+public class Name {
+
+	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("\nPlease type your 'lastname, firstname' in this format\n");
