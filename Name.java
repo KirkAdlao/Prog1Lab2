@@ -1,10 +1,10 @@
-import java.util.*;
-public class Name {
+ import java.util.*;
+ public class Name {
 
 	public static void main (String[] args) {
-		Scanner sc = new Scanner(System.in);
 
-		System.out.println("\nPlease type your 'lastname,firstname' in this format\n");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("\nPlease type your 'lastname, firstname' in this format\n");
 
 		String firstFormat = sc.nextLine();
 
