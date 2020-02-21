@@ -1,4 +1,7 @@
 import java.util.*;
+/*program that prompts the user for the temperature in Celsius in the past 3 days 
+and output the average temperature*/
+
 public class Temperature {
 
     public static void main(String[] args) {
@@ -18,7 +21,8 @@ public class Temperature {
 
         double average = (temperature1 + temperature2 + temperature3)/3;
 
-        System.out.println("The average temperature in the past 3 days is " + average);
+        //printf rounds the number
+        System.out.printf("\nThe average temperature in the past 3 days is " + "%.2f", average);
 
     }
 }
