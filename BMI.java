@@ -1,4 +1,5 @@
 import java.util.*;
+/* This program calculates the Body Mass Index (BMI) of a person.*/
 public class BMI {
 
 
